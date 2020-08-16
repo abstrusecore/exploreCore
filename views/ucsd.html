@@ -1,0 +1,20 @@
+<div class="header">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <h1>UC San Diego</h1>
+      </div>
+      <div class="row justify-content-center">
+        <select onchange="location = this.value">
+            <option hidden disabled selected>UCSD</option>
+          <option value="#/balboa">Balboa Park</option>
+          <option value="#/seaport">Seaport Village</option>
+          <option value="#/sdsu">SDSU</option>
+        </select>
+      </div>
+    </div>
+</div>
+<div class="main">
+    <div class="container-fluid" id="map-canvas">
+          <leaflet center="mapCenter3" markers="mapMarkers3"></leaflet>
+    </div>
+</div>

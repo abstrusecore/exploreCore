@@ -6,6 +6,10 @@ html, body, #map_canvas {
     font-family: "Press Start 2P", monospace;
     background: black;
   }
+
+  .pull-right {
+    background-color: blueviolet;
+  }
   
   .btn,h2 {
     position: relative;
