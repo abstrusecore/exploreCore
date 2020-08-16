@@ -1,0 +1,58 @@
+html, body, #map_canvas {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Press Start 2P", monospace;
+    background: black;
+  }
+  
+  .btn,h2 {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem;
+    top: 40vh;
+    color: white;
+  }
+  
+  .header {
+    background-color: rgba(5, 27, 34, 0.5);
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    line-height: 37px;
+  }
+  
+  .header .container-fluid {
+    position: relative;
+  }
+  
+  .header h1 {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.2px;    
+    margin: 0;
+    padding: 10px 0px;
+    text-transform: uppercase;
+  }
+  
+  .header a {
+    color: rgb(255, 242, 242);
+  }
+  
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  #map_canvas {
+    position: relative;
+  }
+  
+  .angular-leaflet-map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
