@@ -34,7 +34,13 @@
 .leaflet-marker-icon,
 .leaflet-marker-shadow {
 	display: block;
+	width: 37px !important;
+	height: 60px !important;
 	}
+.leaflet-marker-icon:hover {
+	width: 39px !important;
+	height: 64px !important;
+}
 /* map is broken in FF if you have max-width: 100% on tiles */
 .leaflet-container img {
 	max-width: none !important;
@@ -83,7 +89,7 @@
 	position: relative;
 	z-index: 7;
     pointer-events: auto;
-	top: 75px;
+	top: 105px;
 	left: 15px;
 	}
 .leaflet-top,
@@ -391,7 +397,7 @@
 	text-align: center;
 	}
 .leaflet-popup-content-wrapper {
-	padding: 1px;
+	padding: 2px;
 	text-align: left;
 	border-radius: 12px;
 	}
@@ -434,9 +440,9 @@
 	right: 0;
 	padding: 4px 4px 0 0;
 	text-align: center;
-	width: 18px;
-	height: 14px;
-	font: 16px/14px Tahoma, Verdana, sans-serif;
+	width: 36px;
+	height: 34px;
+	font: 22px/20px Tahoma, Verdana, sans-serif;
 	color: #c3c3c3;
 	text-decoration: none;
 	font-weight: bold;

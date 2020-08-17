@@ -18,6 +18,11 @@ html, body, #map_canvas {
     top: 40vh;
     color: white;
   }
+
+  select {
+    height: 50px;
+    width: auto;
+  }
   
   .header {
     background-color: rgba(5, 27, 34, 0.5);
