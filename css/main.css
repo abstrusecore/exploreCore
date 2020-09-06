@@ -22,6 +22,7 @@ html, body, #map_canvas {
   select {
     height: 50px;
     width: auto;
+    padding: 1rem;
   }
   
   .header {

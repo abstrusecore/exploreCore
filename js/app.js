@@ -32,6 +32,12 @@ app.config(function($routeProvider) {
       controller: 'MainController',
       templateUrl: 'views/sdsu.html'
     })
+    .when('/usd', {
+      // controller: 'AboutController',
+      // templateUrl: 'views/about.html'
+      controller: 'MainController',
+      templateUrl: 'views/usd.html'
+    })
     .otherwise({
       redirectTo: '/'
     })

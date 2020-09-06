@@ -39,3 +39,13 @@ app.factory('places4', ['$http', function($http) {
       return err;
     })
   }])
+app.factory('places5', ['$http', function($http) {
+    return $http.jsonp('https://en.wikipedia.org/w/api.php?action=query&list=geosearch&gsradius=10000&gscoord=32.771%7C-117.187&gslimit=30&format=json&callback=JSON_CALLBACK')
+    
+    .success(function(data) {
+      return data;
+    })
+    .error(function(err) {
+      return err;
+    })
+  }])

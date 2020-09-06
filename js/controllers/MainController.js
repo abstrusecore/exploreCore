@@ -1,4 +1,4 @@
-app.controller('MainController', ['$scope', 'places','places2','places3','places4', function($scope,places,places2,places3,places4) {
+app.controller('MainController', ['$scope', 'places','places2','places3','places4','places5', function($scope,places,places2,places3,places4,places5) {
     $scope.mapCenter = {
       lat: 32.731,
       lng: -117.150,
@@ -19,6 +19,11 @@ app.controller('MainController', ['$scope', 'places','places2','places3','places
       lng: -117.072,
       zoom: 16
     },
+    $scope.mapCenter5 = {
+      lat: 32.771,
+      lng: -117.187,
+      zoom: 15
+    },
     places.success(function(data) {
       $scope.geodata = data;
       $scope.mapMarkers = geodataToMarkers($scope.geodata);
@@ -34,5 +39,9 @@ app.controller('MainController', ['$scope', 'places','places2','places3','places
     places4.success(function(data) {
       $scope.geodata4 = data;
       $scope.mapMarkers4 = geodataToMarkers($scope.geodata4);
+    })
+    places5.success(function(data) {
+      $scope.geodata5 = data;
+      $scope.mapMarkers5 = geodataToMarkers($scope.geodata5);
     })
   }]);
